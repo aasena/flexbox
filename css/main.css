@@ -1,0 +1,125 @@
+.element {
+    border: 1px solid #fff;
+    padding: 20px;
+    cursor: pointer;
+}
+
+[class*="container"] > div:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    min-height: 100px;
+}
+
+.container-row-reverse {
+	display: flex;
+    flex-direction: row-reverse;
+    padding: 15px;
+    min-height: 100px;
+}
+
+.container-column {
+	display: flex;
+    flex-direction: column;
+    padding: 15px;
+    min-height: 100px;
+}
+
+.container-column-reverse {
+	display: flex;
+    flex-direction: column-reverse;
+    padding: 15px;
+    min-height: 100px;
+}
+
+[class^="container"].content-start {
+    justify-content: flex-start;
+}
+
+[class^="container"].content-end {
+    justify-content: flex-end;
+}
+
+[class^="container"].content-center, {
+    justify-content: center;
+}
+
+[class^="container"].content-around {
+    justify-content: space-around;
+}
+
+[class^="container"].content-between {
+    justify-content: space-between;
+}
+
+[class^="container"].align-stretch {
+    align-items: stretch;
+}
+
+[class^="container"].align-baseline {
+    align-items: baseline;
+}
+
+[class^="container"].align-start {
+    align-items: flex-start;
+}
+
+[class^="container"].align-end {
+    align-items: flex-end;
+}
+
+[class^="container"].align-center {
+    align-items: center;
+}
+
+[class^="container"].wrap {
+    flex-wrap: wrap;
+}
+
+[class^="container"].wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+[class^="container"].align-content-around {
+    align-content: space-around;
+}
+
+[class^="container"].align-content-between {
+    align-content: space-between;
+}
+
+[class^="container"].align-content-start {
+    align-content: flex-start;
+}
+
+[class^="container"].align-content-end {
+    align-content: flex-end;
+}
+
+[class^="container"].align-content-center {
+    align-content: center;
+}
+
+[class^="container"].self-center {
+    align-self: center;
+}
+
+[class^="container"].self-stretch {
+    align-self: stretch;
+}
+
+[class^="container"].self-baseline {
+    align-self: baseline;
+}
+
+[class^="container"].self-end {
+    align-self: flex-end;
+}
+
+[class^="container"].self-start {
+    align-self: flex-start;
+}

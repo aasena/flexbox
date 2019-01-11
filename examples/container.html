@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <style>
+        section:not(:first-child) {
+            margin-top: 50px;
+        }
+
+        .back {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .back:hover {
+            background-color: black;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <a class="back" href="../index.html" style="position: fixed">Back to Home</a>
+    <div class="container-column content-start align-center" style="padding: 0px 15px 15px 15px;">
+        <h2>Container</h2>
+    </div>
+    <section class="container-row content-around align-center wrap">
+        <p>
+            There are 4 types of Container: 
+            <a href="#container-row" onclick="scrollTo(this)">
+                <code>
+                    container-row
+                </code>
+            </a>,
+            <a href="#container-row-reverse" onclick="scrollTo(this)">
+                <code>
+                    container-row-reverse
+                </code>
+            </a>,
+            <a href="#container-column" onclick="scrollTo(this)">
+                <code>
+                    container-column
+                </code>
+            </a> and
+            <a href="#container-column-reverse" onclick="scrollTo(this)">
+                <code>
+                    container-column-reverse
+                </code>
+            </a>.
+        </p>
+    </section>
+    <section class="element" id="container-row">
+        <div style="width: 100%; text-align: center;">
+            <h1>container-row</h1>
+        </div> 
+        <div class="container-row wrap">
+            <div class="element">1</div>
+            <div class="element">2</div>
+            <div class="element">3</div>
+            <div class="element">4</div>
+        </div>
+    </section>
+    <section class="element" id="container-row-reverse">
+        <div style="width: 100%; text-align: center;">
+            <h1>container-row-reverse</h1>
+        </div> 
+        <div class="container-row-reverse wrap">
+            <div class="element">1</div>
+            <div class="element">2</div>
+            <div class="element">3</div>
+            <div class="element">4</div>
+        </div>
+    </section>
+    <section class="element" id="container-column">
+        <div style="width: 100%; text-align: center;">
+            <h1>container-column</h1>
+        </div> 
+        <div class="container-column">
+            <div class="element">1</div>
+            <div class="element">2</div>
+            <div class="element">3</div>
+            <div class="element">4</div>
+        </div>
+    </section>
+    <section class="element" id="container-column-reverse">
+        <div style="width: 100%; text-align: center;">
+            <h1>container-column-reverse</h1>
+        </div> 
+        <div class="container-column-reverse">
+            <div class="element">1</div>
+            <div class="element">2</div>
+            <div class="element">3</div>
+            <div class="element">4</div>
+        </div>
+    </section>
+
+    <script>
+        function scrollTo(el) {
+            $("html, body").animate({ scrollTop: $('#' + el.innerText).offset().top }, 1000);
+        }
+    </script>
+</body>
+</html>
