@@ -104,22 +104,22 @@
     align-content: center;
 }
 
-[class^="container"].self-center {
+[class^="container"] .self-center {
     align-self: center;
 }
 
-[class^="container"].self-stretch {
+[class^="container"] .self-stretch {
     align-self: stretch;
 }
 
-[class^="container"].self-baseline {
+[class^="container"] .self-baseline {
     align-self: baseline;
 }
 
-[class^="container"].self-end {
+[class^="container"] .self-end {
     align-self: flex-end;
 }
 
-[class^="container"].self-start {
+[class^="container"] .self-start {
     align-self: flex-start;
 }
